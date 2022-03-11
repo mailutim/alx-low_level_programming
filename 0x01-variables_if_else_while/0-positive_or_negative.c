@@ -3,7 +3,7 @@
 /** assigns a random number to n
  * returns and executes it
 */
-int main(void);
+int main(void)
 {
 int n;
 
