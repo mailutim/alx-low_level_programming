@@ -1,4 +1,3 @@
-
 #include "main.h"
 
 /**
@@ -9,12 +8,32 @@
 
 void times_table(void)
 {
-int n, i;
-n = 9;
-for (i = 0, i <= 10; ++i)
-{
-_putchar(n, i, n *i);
+	int row, col;
+	int mult = 0;
 
-}
-return (0);
+	for (row = 0; row < 10; row++)
+	{
+		for (col = 0; col < 10; col++)
+		{
+			mult = (row * col);
+			if (mult < 10)
+			{
+				if (col != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+				_putchar(mult + '0');
+			}
+			else
+			{
+				_putchar(' ');
+				_putchar((mult / 10) + '0');
+				_putchar((mult % 10) + '0');
+			}
+			if (col != 9)
+				_putchar(',');
+		}
+		_putchar('\n');
+	}
 }
