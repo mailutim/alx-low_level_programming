@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 /**
  * main - program that prints _putchar.
  *
@@ -11,7 +11,7 @@ char _putchar[8] = "_putchar";
 while (n < 8)
 {
 putchar(_putchar[n]);
-n += 1;
+n++;
 }
 putchar("\n");
 
