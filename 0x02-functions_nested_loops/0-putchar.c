@@ -1,19 +1,20 @@
 #include "main.h"
 /**
- * main - program that prints _putchar.
- *
- * Return: 0
+ * main - Entry point
+ * Description: prints Putchar 
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-int n = 0;
-char _putchar[8] = "_putchar";
-while (n < 8)
-{
-putchar(_putchar[n]);
-n++;
-}
-putchar("\n");
+char str[] = "_putchar\n";
+int i = 0;
 
+while (str[i] != '\0')
+    {
+	char c = str[i];
+
+	_putchar(c);
+	i++;
+	}
 return (0);
 }
