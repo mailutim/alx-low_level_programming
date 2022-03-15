@@ -10,10 +10,10 @@ int n = 0;
 char _putchar[8] = "_putchar";
 while (n < 8)
 {
-_putchar(_putchar[n]);
+putchar(_putchar[n]);
 n++;
 }
-_putchar("\n");
+putchar("\n");
 
 return (0);
 }
